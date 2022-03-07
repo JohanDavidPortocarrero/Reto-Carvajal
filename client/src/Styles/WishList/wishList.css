@@ -1,0 +1,196 @@
+.bodyWish{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishBody{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    height: 100vh;
+    transition: 1s;
+}
+
+.wishBody.activeT{
+    width: calc( 100% - 60px );
+    margin-left: 60px;
+    transition: 1s;
+}
+
+.contetRecibos{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.contetRecibos .contListProduct{
+    min-width: 350px;
+    width: calc( 100% - 500px );
+    min-height: 400px;
+    height: 95%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border-bottom: 1px solid rgba(59, 58, 58, 0.384);
+    transition: 1s;
+}
+
+.contetRecibos .contListProduct.minimizar{
+    min-height: 0;
+    height: 60px;
+    transition: 2s;
+} 
+
+.contetRecibos .contMiniFactura{
+    min-width: 350px;
+    width: 350px;
+    min-height: 400px;
+    height: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 94, 0, 0.973);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.contetRecibos .contMiniFactura.minimizar{
+    min-height: 0;
+    height: 60px;
+    transition: 2s;
+} 
+
+.contetRecibos .contMiniFactura .headRecibo, .contetRecibos .contListProduct .headRecibo{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.contetRecibos .contListProduct .headRecibo h1{
+    font-size: 1.5rem;
+}
+
+.contetRecibos .contMiniFactura .headRecibo button, 
+.contetRecibos .contListProduct .headRecibo button{
+    flex: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contetRecibos .contMiniFactura .headRecibo button:hover, 
+.contetRecibos .contListProduct .headRecibo button:hover{
+    background: rgb(0, 132, 255);
+    color: white;
+}
+
+.contetRecibos .contMiniFactura .headRecibo button ion-icon, 
+.contetRecibos .contListProduct .headRecibo button ion-icon{
+    font-size: 25px;
+} 
+
+.bodyRecibo{
+    width: 100%;
+    height: calc( 100% - 60px );
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.bodyRecibo::-webkit-scrollbar{
+    width: 10px;
+}
+
+.bodyRecibo::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.bodyRecibo::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+
+.contMiniFactura .bodyRecibo .zonaData{
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.contMiniFactura .bodyRecibo .zonaData p{
+    width: 100%;
+    padding: 10px 0;
+    padding-right: 10px;
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    text-align: end;
+}
+
+.contMiniFactura .bodyRecibo .zonaBoton{
+    width: 100%;
+    height: 40px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contMiniFactura .bodyRecibo .zonaBoton button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.contMiniFactura .bodyRecibo .zonaBoton button:hover{
+    background: rgb(1, 1, 109);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+}
+
+.contListProduct .bodyRecibo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading{
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    color: orangered;
+    text-align: center;
+} 
+
+.btnConfirmar{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.btnConfirmar button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.btnConfirmar button:hover{
+    background: rgb(1, 1, 109);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+}

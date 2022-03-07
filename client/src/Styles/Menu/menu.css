@@ -1,0 +1,127 @@
+.bodyMenu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubody{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    height: 100vh;
+    transition: 1s;
+}
+
+.menubody.activeT{
+    width: calc( 100% - 60px );
+    margin-left: 60px;
+    transition: 1s;
+}
+
+.headToggle{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headToggle button{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 187, 0);
+    background: white;
+}
+
+.headToggle button:hover{
+    background: rgb(255, 187, 0);
+    box-shadow: 0px 0px 3px rgba(107, 106, 106, 0.493);
+}
+
+.headToggle button ion-icon{
+    font-size: 30px;
+    color: gray;
+}
+ 
+.headToggle button:hover ion-icon{
+    color: white;
+}
+
+.contTitle{
+    width: 100%;
+    height: 80px;
+    padding-left: 40px;
+}
+
+.contTitle h1{
+    font-size: 50px;
+}
+
+.contenedorListado{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorListado .contProdcutos{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(107, 106, 106, 0.493);
+    border-radius: 20px;
+}
+
+.contenedorListado .contProdcutos .btnfiltro{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    top: -20px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorListado .contProdcutos .btnfiltro ion-icon{
+    font-size: 25px;
+    color: rgb(73, 70, 70);
+}
+
+.contenedorListado .contProdcutos .listadoMenu{
+    width: 100%;
+    height: 100%;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.contenedorListado .contProdcutos .listadoMenu::-webkit-scrollbar{
+    width: 10px;
+}
+
+.contenedorListado .contProdcutos .listadoMenu::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.contenedorListado .contProdcutos .listadoMenu::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+

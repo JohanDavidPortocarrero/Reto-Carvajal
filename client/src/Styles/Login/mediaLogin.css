@@ -1,0 +1,63 @@
+@media (max-width: 939px){
+    .bodyLogin{
+        position: relative;
+        justify-content: center;
+    }
+
+    .bodyLogin .imagenLog{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transition: 1s;
+    }
+
+    .bodyLogin .contLogin{
+        z-index: 5000;
+        backdrop-filter: blur(10px);
+        transition: 1s;
+    }
+
+    .bodyLogin .contLogin h1{
+        color: black;
+    }
+
+}
+
+@media (max-width: 464px){
+    .bodyLogin .contLogin{
+        width: 95%;
+        justify-content: space-evenly;
+    }
+
+    .bodyLogin .contLogin h1 {
+        height: auto;
+    }
+
+    .bodyLogin .contLogin .contForm{
+        height: auto;
+    }
+
+    .bodyLogin .contLogin .contForm .contInput{
+        height: calc(100% - 50px);
+        width: 95%;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    .bodyLogin .contLogin .contForm .contInput input{
+        width: 237px;
+        font-size: 14px;
+    }
+
+    .bodyLogin .contLogin .contForm .contButton{
+        height: auto;
+        margin-top: 10px;
+    }
+
+}

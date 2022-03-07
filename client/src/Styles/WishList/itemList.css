@@ -1,0 +1,176 @@
+.ItemList{
+    flex: none;
+    width: 97%;
+    min-height: 50px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.ItemList:hover{
+    box-shadow: 0px 0px 10px rgba(29, 28, 28, 0.596);
+}
+
+.ItemList.active{
+    padding: 10px 0;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.ItemList.active:hover{
+    box-shadow: none;
+}
+
+.TitleItem{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(184, 184, 250);
+    transition: 1s;
+}
+
+.TitleItem:hover{
+    background: rgb(255, 170, 113);
+    padding-left: 5px;
+}
+
+.ItemList.active .TitleItem{
+    border-bottom: 1px solid rgb(69, 69, 70);
+    border-radius: 20px 0;
+    padding-left: 20px;
+    transition: 1s;
+}
+
+.ItemList .TitleItem h1{
+    font-size: 1.8rem;
+}
+
+.ItemList.active .TitleItem:hover{
+    background: rgb(184, 184, 250);
+    padding-left: 20px;
+}
+
+.TitleItem button{
+    flex: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.TitleItem button:hover{
+    background: rgb(238, 159, 69);
+    box-shadow: 0px 0px 10px rgba(30, 31, 31, 0.562);
+}
+
+.TitleItem button ion-icon{
+    font-size: 20px;
+}
+
+.opcionItem.active{
+    display: none;
+    transition: 1s;
+}
+
+.opcionItem{
+    width: 95%;
+    min-height: 200px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 5px 10px rgba(29, 28, 28, 0.596);
+    padding: 10px;
+    transition: 1s;
+}
+
+.opcionItem p{
+    width: 100%;
+}
+
+.opcionItem p.catg{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.opcionItem p.decData{
+    text-align: end;
+}
+
+.opcionItem p.decData:nth-child(2){
+    font-size: 40px;
+    font-weight: 700;
+    color: orange;
+}
+
+.opcionItem p.decData:nth-child(4){
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.opcionItem .btnAccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcionItem .btnAccion button{
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcionItem .btnAccion button ion-icon{
+    font-size: 20px;
+}
+
+.opcionItem .btnAccion button:nth-child(1){
+    background: rgb(109, 231, 109);
+}
+
+.opcionItem .btnAccion button:nth-child(1):hover{
+    background: rgb(1, 150, 1);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(29, 28, 28, 0.596);
+}
+
+.opcionItem .btnAccion button:nth-child(3){
+    background: rgb(97, 184, 255);
+}
+
+.opcionItem .btnAccion button:nth-child(3):hover{
+    background: rgb(0, 60, 109);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(29, 28, 28, 0.596);
+}
+
+.opcionItem .btnAccion button:nth-child(2){
+    background: rgb(236, 99, 99);
+}
+
+.opcionItem .btnAccion button:nth-child(2):hover{
+    background: rgb(255, 0, 0);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(29, 28, 28, 0.596);
+}
+
+.opcionItem .descProduct{
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+}

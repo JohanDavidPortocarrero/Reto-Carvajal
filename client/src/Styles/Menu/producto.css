@@ -1,0 +1,62 @@
+.CardProdcuto{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 3px rgba(104, 84, 84, 0.527);
+    background: white;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.CardProdcuto .contImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.CardProdcuto .contImg img{
+    position: relative;
+    height: 100%;
+    transition: 5s;
+}
+
+.contOpcion{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    background: rgba(250, 90, 90, 0.589);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: 1s;
+}
+
+.CardProdcuto:hover .contOpcion{
+    top: 50%;
+    height: 40%;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CardProdcuto:hover .contOpcion h1{
+    font-size: 30px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+.CardProdcuto:hover .contImg img{
+    width: 100%;
+    height: auto;
+    transition: 1s;
+}

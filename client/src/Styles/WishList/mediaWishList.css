@@ -1,0 +1,60 @@
+@media screen and (max-width: 976px) {
+
+    .contetRecibos{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 70px;
+    }
+
+    .contetRecibos .contListProduct{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .zonaBoton{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: 1s;
+    }
+    
+    .wishBody .btnConfirmar{
+        position: fixed;
+        bottom: 10px;
+        width: calc(100% - 250px);
+        height: auto;
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: rgba(59, 134, 184, 0.432);
+        padding: 10px 0;
+        padding-right: 10px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(37, 37, 37, 0.432);
+        backdrop-filter: blur(10px);
+        transition: 1s;
+    }
+
+    .wishBody.activeT .btnConfirmar{
+        width: calc(100% - 60px);
+    }
+
+}
+
+@media screen and (max-width: 690px){
+    .wishBody, .wishBody.activeT{
+        width: 100%;
+        margin-left: 0;
+        transition: 1s;
+    }
+
+    .wishBody .btnConfirmar, .wishBody.activeT .btnConfirmar{
+        width: 100%;
+        transition: 1s;
+    }
+
+}

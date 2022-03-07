@@ -1,0 +1,55 @@
+@media screen and (max-width: 1050px){
+    .modalContainer .modal{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 951px){
+    .contZonasModal{
+        justify-content: flex-start;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .modalContainer .modal .contImagen{
+        width: 100%;
+        height: 500px;
+    }
+
+    .contZonasModal::-webkit-scrollbar{
+        width: 10px;
+    }
+    
+    .contZonasModal::-webkit-scrollbar-thumb{
+        background: linear-gradient(#00c6ff, #3bff86);
+        border-radius: 6px;
+    }
+    
+    .contZonasModal::-webkit-scrollbar-thumb:hover{
+        background: linear-gradient(#00c6ff, #3bff86);
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+    .modalContainer .modal{
+        width: 95%;
+    }
+
+    .modalContainer .modal .contInfo{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+    .contInfo .zonaAgregar .inputCantidad input{
+        width: 70px;
+    }
+
+    .contInfo .zonaAgregar .inputCantidad p{
+        font-size: 1rem;
+    }
+}

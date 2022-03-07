@@ -1,0 +1,131 @@
+.bodyLogin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bodyLogin .contLogin{
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.849);
+    background: rgba(108, 213, 255, 0.438);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bodyLogin .contLogin h1{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 60px;
+    color: gray;
+}
+
+.bodyLogin .contLogin .contForm{
+    width: 100%;
+    height: calc(100% - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.bodyLogin .contLogin .contForm .contInput{
+    flex: none;
+    width: 85%;
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(46, 45, 45, 0.342);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: olive;
+}
+
+.bodyLogin .contLogin .contForm .contInput div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.bodyLogin .contLogin .contForm .contInput div .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(134, 133, 133, 0.39);
+}
+
+.bodyLogin .contLogin .contForm .contInput div .icon ion-icon{
+    font-size: 35px;
+}
+
+.bodyLogin .contLogin .contForm .contInput input{
+    width: 280px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin: 5px 8px;
+    background: white;
+}
+
+.bodyLogin .contLogin .contForm .contButton{
+    flex: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bodyLogin .contLogin .contForm .contButton button{
+    padding: 8px 30px;
+    font-size: 20px;
+    border-radius: 18px;
+    font-weight: 800;
+    border: none;
+    background: rgb(187, 245, 255);
+    border: 1px solid rgba(158, 156, 156, 0.527);
+}
+
+.bodyLogin .contLogin .contForm .contButton button:hover{
+    background: rgb(0, 243, 162);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.849);
+}
+
+.bodyLogin .imagenLog{
+    width: calc(100% - 700px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyLogin .imagenLog img{
+    width: 100%;
+}
+
+.goRegister{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}

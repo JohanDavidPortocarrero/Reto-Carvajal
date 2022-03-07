@@ -1,0 +1,206 @@
+.bodyToggle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: rgb(140, 140, 241);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 1s;
+}
+
+.bodyToggle.active{
+    width: 60px;    
+    transition: 1s;
+}
+
+.bodyToggle .closeToggle{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.bodyToggle ul{
+    margin-top: 70px;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.bodyToggle ul li{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.bodyToggle ul li:hover{
+    background: orange;
+    border-radius: 10px;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+
+.bodyToggle.active ul li:hover{
+    background: none;
+    border-radius: none;
+    padding-left: 0;
+}
+
+.bodyToggle ul li span{
+    width: calc(100% - 45px);
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 10px;
+    transition: 2s;
+}
+
+.bodyToggle.active ul li span{
+    display: none;
+    transition: 1s;
+}
+
+.bodyToggle ul li .Link{
+    flex: none;
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: black;
+}
+
+.bodyToggle.active ul li .Link{
+    width: 45px;
+    transition: 1s;
+}
+
+.bodyToggle ul li .Link.active{
+    background: rgb(0, 16, 85);
+    color: white;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.bodyToggle.active ul li .Link:hover{
+    background: orange;
+    border-radius: 10px;
+}
+
+.bodyToggle ul li .Link ion-icon{
+    font-size: 30px;
+}
+
+.bodyToggle ul li:hover ion-icon{
+    font-size: 35px
+}
+
+.bodyToggle.active ul li:hover ion-icon{
+    font-size: 30px;
+}
+
+@media (max-width: 690px){
+    .bodyToggle{
+        width: 0;
+        z-index: 5000;
+    }
+
+    .bodyToggle.active{
+        padding-top: 10px;
+        padding-right: 10px;
+        width: 250px;
+    }
+
+    .bodyToggle.active .contBtnClose{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .bodyToggle.active .closeToggle{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+        border: 1px solid rgb(255, 187, 0);
+        background: white;
+    }
+
+    .bodyToggle.active .closeToggle:hover{
+        background: rgb(255, 187, 0);
+        box-shadow: 0px 0px 3px rgba(107, 106, 106, 0.493);
+    }
+
+    .bodyToggle.active .closeToggle ion-icon{
+        font-size: 30px;
+        color: gray;
+    }
+
+    .bodyToggle.active .closeToggle:hover ion-icon{
+        color: white;
+    }
+
+    .bodyToggle.active ul{
+        margin-top: 50px;
+    }
+
+    .bodyToggle ul li {
+        justify-content: flex-start;
+    }
+
+    .bodyToggle ul li span{
+        width: 0;
+    }
+
+    .bodyToggle.active ul li span{
+        width: calc(100% - 45px);
+        height: 45px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 20px;
+        padding-left: 10px;
+        transition: 2s;
+    }
+
+    .bodyToggle.active ul li .Link{
+        width: 100%;
+    }
+
+    .bodyToggle.active ul li:hover{
+        background: orange;
+        border-radius: 10px;
+        padding-left: 10px;
+        transition: 0.5s;
+    }
+
+    .bodyToggle ul li:hover{
+        background: none;
+        border-radius: none;
+        padding-left: 0;
+    }
+
+    .bodyToggle.active ul li .Link.active{
+        background: rgb(0, 16, 85);
+        color: white;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+}

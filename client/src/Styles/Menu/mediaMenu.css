@@ -1,0 +1,11 @@
+@media screen and (max-width: 690px){
+    .menubody, .menubody.activeT{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contenedorListado{
+        height: 80%;
+    }
+
+}

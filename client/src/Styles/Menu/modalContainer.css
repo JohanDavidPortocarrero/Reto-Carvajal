@@ -1,0 +1,203 @@
+.modalContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.548);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .modal{
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contClosebtn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contZonasModal{
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modalContainer .modal .closeBtn{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(252, 125, 125);
+}
+
+.modalContainer .modal .closeBtn:hover{
+    background: red;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.575);
+}
+
+.modalContainer .modal .closeBtn ion-icon{
+    font-size: 20px;
+}
+
+.modalContainer .modal .closeBtn:hover ion-icon{
+    color: white;
+    font-weight: 700;
+}
+
+.modalContainer .modal .contImagen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.modalContainer .modal .contImagen img{
+    width: 100%;
+}
+
+.modalContainer .modal .contInfo{
+    position: relative;
+    flex: none;
+    width: 450px;
+    height: 100%;
+    padding: 0px 15px 0 10px;
+}
+
+.modalContainer .modal .contInfo h1{
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(218, 71, 71);
+}
+
+.modalContainer .modal .contInfo .contZonas{
+    width: 100%;
+    height: calc(100% - 110px);
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.modalContainer .modal .contInfo .zonaProducto{
+    width: 95%;
+}
+
+.modalContainer .modal .contInfo .zonaProducto h3{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modalContainer .modal .contInfo .zonaProducto h3 p{
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.modalContainer .modal .contInfo .zonaAgregar{
+    width: 95%;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
+}
+
+.contInfo .zonaAgregar .precio{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    color: orange;
+    text-align: end;
+    padding-right: 10px;
+}
+
+
+.contInfo .zonaAgregar .total{
+    text-align: end;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.modalContainer .modal .contInfo .zonaAgregar .inputCantidad{
+    flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contInfo .zonaAgregar .inputCantidad p{
+    font-size: 18px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.contInfo .zonaAgregar .inputCantidad input{
+    width: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    box-shadow: 0 0px 10px rgba(77, 75, 75, 0.397);
+    margin: 5px 8px;
+    text-align: end;
+    background: white;
+}
+
+.contInfo .zonaAgregar .contBtnAdd{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contInfo .zonaAgregar .contBtnAdd button{
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: none;
+    background: rgb(209, 206, 206);
+}
+
+.contInfo .zonaAgregar .contBtnAdd button:hover{
+    background: rgb(0, 26, 255);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
+    color: white;
+    border: none;
+}

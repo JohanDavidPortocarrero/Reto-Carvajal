@@ -1,0 +1,87 @@
+.bodyRegister{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zonaContForm{
+    width: 400px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.zonaContForm h1{
+    font-size: 2.5rem;
+}
+
+.zonaContForm form{
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(99, 98, 98, 0.548);
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(235, 187, 57, 0.767);
+}
+
+.zonaContForm form input{
+    width: 95%;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin: 5px 8px;
+    background: white;
+}
+
+.zonaContForm form .coincidenciaPasss{
+    width: 95%;
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.zonaContForm form .coincidenciaPasss.coincide{
+    color: green;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.zonaContForm form .contbtnForm{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.zonaContForm form .contbtnForm input{
+    width: auto;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1ps solid gray;
+}
+
+.zonaContForm form .contbtnForm input:hover{
+    background: rgb(3, 49, 134);
+    color: white;
+}
