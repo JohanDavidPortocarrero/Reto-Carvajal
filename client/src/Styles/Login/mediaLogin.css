@@ -14,7 +14,7 @@
     }
 
     .bodyLogin .contLogin{
-        z-index: 5000;
+        z-index: 2;
         backdrop-filter: blur(10px);
         transition: 1s;
     }

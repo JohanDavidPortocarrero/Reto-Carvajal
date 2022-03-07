@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import {Link} from "react-router-dom";
 
 import '../../Styles/Login/login.css'
@@ -11,7 +11,7 @@ import ToggleContext from '../../Context/Toggle/ToggleContext';
 export default function LogIn() {
 
   const usuarioContext = useContext(UsuariosContext);
-  const { autenticarUsuario, usuarioAutenticado } = usuarioContext;
+  const { autenticarUsuario, usuarioAutenticado, userCargando } = usuarioContext;
 
   const toggleContext = useContext(ToggleContext);
   const { cambiarPagina } = toggleContext;
@@ -21,26 +21,13 @@ export default function LogIn() {
     password: ""
   });
 
-  if( usuarioAutenticado ){
-    try {
-
-      Swal.fire({
-        icon: 'success',
-        title: 'Bienvenido',
-        showConfirmButton: false,
-        timer: 3000,
-      }).then(() => {
-        cambiarPagina('menu')
-      }).then(() => {
-        window.localStorage.setItem('usuario', JSON.stringify(state))
-        window.location = "/menu";
-      }) 
-    } catch (error) {
-      console.log(error)
+  useEffect(() => {
+    const elem = window.localStorage.getItem('usuario')
+    const dato = elem ? JSON.parse(elem) : null
+    if( dato != null ){
+      window.location = "/menu";
     }
-
-    return <></>
-  } 
+  }, [])
 
   const onChage = (e, tip) => {
     if( tip === 'pass' ){
@@ -58,8 +45,38 @@ export default function LogIn() {
     
   }
 
+  if( usuarioAutenticado ){
+    try {
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Bienvenido',
+        showConfirmButton: false,
+        timer: 3000,
+      }).then(() => {
+        cambiarPagina('menu')
+      }).then(() => {
+        window.localStorage.setItem('usuario', JSON.stringify(state))
+        window.location = "/menu";
+      }) 
+
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+
   const ingresar = () => {
-    autenticarUsuario(state);
+    autenticarUsuario(state).then(() => {
+      if( !usuarioAutenticado && !userCargando ){
+        Swal.fire({
+          icon: 'error',
+          title: 'El usuario no existe',
+          showConfirmButton: false,
+          timer: 3000,
+        })
+      } 
+    })
   }
 
   return (

@@ -47,25 +47,26 @@ export default function WishList(props) {
   useEffect(() => {
     verificarInicioSecion();
     obtenerProductos();
+    const elem = window.localStorage.getItem('usuario')
+      const dato = elem ? JSON.parse(elem) : null
+      if( dato === null ){
+        Swal.fire({
+          icon: 'error',
+          title: 'Debes iniciar secion',
+          showConfirmButton: false,
+          timer: 3000,
+        }).then(() => {
+          window.location = "/login";
+        } )
+      }
   }, []);
 
-  if( !usuarioAutenticado && !userCargando ){ 
-    Swal.fire({
-      icon: 'error',
-      title: 'Debes iniciar secion',
-      showConfirmButton: false,
-      timer: 3000,
-    }).then(() => {
-      window.location = "/login";
-    } )
-    
-    return <></>
-  }
-  else{
+  useEffect(() => {
     if( !userCargando ){
       obtenerWishList(datosUsuario.id);
     }
-  }
+  })
+
 
   const confirmarCompra = () => {
 
